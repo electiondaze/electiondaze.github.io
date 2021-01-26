@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I’m using this blog to be a record of learning R. From doing exercises/drills, EDA, and written summaries of my findings of public data.
+
+The most beautiful thing about data is you can ultimately learn anything if you know how to explore.
 
 ### Contact me
 
+To make public, or not? That is the question.
 [email@domain.com](mailto:email@domain.com)
