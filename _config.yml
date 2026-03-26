@@ -1,0 +1,46 @@
+# Site settings
+title: Your Name
+tagline: Your tagline or description
+description: "Your personal blog, training materials, and resume"
+baseurl: "" # Leave empty for username.github.io
+url: "https://username.github.io" # Change to your GitHub username
+
+# Hyde theme settings
+theme: jekyll-theme-hyde
+
+# Author info
+author:
+  name: Your Name
+  email: your@email.com
+  link: https://yourwebsite.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Permalinks
+permalink: pretty
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+# Exclude
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
