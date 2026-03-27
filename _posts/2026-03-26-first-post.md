@@ -12,6 +12,10 @@ I've used linux since I was a child that just wanted to figure out what this ope
 
 You see, I've always been a tinkerer with software and hardware. As an elder millennial, it's.. -- well, we'll keep writing here too, I just want to see how long it takes for initial deployment, and posts to show up.
 
+This is another line.
+
+~~this is two tilde's~~
+
 # Title
 ## Smaller title!
 ### Header 3
