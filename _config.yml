@@ -1,9 +1,9 @@
 # Site settings
-title: Your Name
+title: Electiondaze
 tagline: Your tagline or description
-description: "Your personal blog, training materials, and resume"
+description: "Thoughts on technology, politics, and whatever else we're learning"
 baseurl: "" # Leave empty for username.github.io
-url: "https://username.github.io" # Change to your GitHub username
+url: "https://electiondaze.github.io" # Change to your GitHub username
 
 # Hyde theme settings
 theme: jekyll-theme-hyde
