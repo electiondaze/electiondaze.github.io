@@ -5,11 +5,11 @@ title: Home
 
 ## Welcome
 
-Hi, I'm **Your Name**. This is my personal space for:
+Hi, I'm Jim This is my personal space for:
 
 - 📝 **Blog** – Thoughts and insights
-- 📚 **Training** – Course materials and exercises
-- 📄 **Resume** – Professional background
+- 📚 **Learning** – Whatever rabbit hole I decided to go down, and how to apply it
+- 📄 **Resume** – Professional..ish background
 
 ---
 
