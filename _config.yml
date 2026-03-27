@@ -6,7 +6,7 @@ baseurl: "" # Leave empty for username.github.io
 url: "https://electiondaze.github.io" # Change to your GitHub username
 
 # Hyde theme settings
-theme: jekyll-theme-hyde
+remote_theme: poole/hyde
 
 # Author info
 author:
