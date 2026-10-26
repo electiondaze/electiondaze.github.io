@@ -7,6 +7,7 @@ url: "https://electiondaze.github.io"
 author: Jim
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
+future: true   # publish future-dated posts (remove to schedule posts by date)
 paginate: 10
 paginate_path: /page:num/
 plugins:
