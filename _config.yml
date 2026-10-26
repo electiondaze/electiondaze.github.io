@@ -1,46 +1,17 @@
-# Site settings
-title: Jim
-tagline: Thoughts on technology, politics, and whatever else I'm learning
-description: Thoughts on technology, politics and whatever else I'm learning
-baseurl: "" # Leave empty for username.github.io
-url: "https://electiondaze.github.io" # Change to your GitHub username
-
-# Hyde theme settings
-remote_theme: poole/hyde
-
-# Author info
-author:
-  name: Your Name
-  email: your@email.com
-  link: https://yourwebsite.com
-
-# Build settings
+title: Thoughts from Jim
+tagline: Writings and notes
+description: Writings and notes from Jim.
+# For a project site set baseurl: "/repo-name"; for username.github.io leave empty.
+baseurl: ""
+url: "https://electiondaze.github.io"
+author: Jim
 markdown: kramdown
-highlighter: rouge
-
-# Permalinks
-permalink: pretty
-
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /:categories/:year/:month/:day/:title/
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: post
-  - scope:
-      path: ""
-    values:
-      layout: page
-
-# Exclude
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
+permalink: /:year/:month/:day/:title/
+paginate: 10
+paginate_path: /page:num/
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+# Top navigation sections. Posts opt in with `section: Politics` in front matter.
+sections: [Politics, Tech, Abroad]

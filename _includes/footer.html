@@ -1,0 +1,9 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="logo small" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <ul>
+      {% for s in site.sections %}<li><a href="{{ s | slugify | prepend: '/section/' | append: '/' | relative_url }}">{{ s }}</a></li>{% endfor %}
+    </ul>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.author }}. <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+  </div>
+</footer>

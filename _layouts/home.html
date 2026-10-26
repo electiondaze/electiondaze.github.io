@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{% assign lead = site.posts.first %}
+{% assign rest = site.posts | slice: 1, 4 %}
+{% assign more = site.posts | slice: 5, 12 %}
+<div class="wrap">
+  {% if lead %}
+  <section class="hero">
+    <article class="lead">
+      {% if lead.section %}<span class="label">{{ lead.section }}</span>{% endif %}
+      <h1><a href="{{ lead.url | relative_url }}">{{ lead.title }}</a></h1>
+      <p class="dek">{{ lead.description | default: lead.excerpt | strip_html | truncate: 220 }}</p>
+      <time>{{ lead.date | date: "%B %-d, %Y" }}</time>
+    </article>
+    <aside class="hero-side">
+      <h2 class="rail-title">Latest</h2>
+      {% for p in rest %}{% include card.html post=p %}{% endfor %}
+    </aside>
+  </section>
+  {% endif %}
+
+  {% if more.size > 0 %}
+  <section class="grid-section">
+    <h2 class="rail-title">More stories</h2>
+    <div class="grid">
+      {% for p in more %}{% include card.html post=p excerpt=true %}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>

@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<div class="wrap">
+  <header class="section-header"><span class="label">Section</span><h1>{{ page.section }}</h1></header>
+  <div class="grid">
+    {% assign found = site.posts | where: "section", page.section %}
+    {% for p in found %}{% include card.html post=p excerpt=true %}{% else %}<p>No stories yet.</p>{% endfor %}
+  </div>
+</div>

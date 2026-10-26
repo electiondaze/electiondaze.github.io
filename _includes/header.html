@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="top-bar wrap">
+    <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <span class="date">{{ site.time | date: "%A, %B %-d, %Y" }}</span>
+  </div>
+  <div class="wrap masthead">
+    <a class="logo" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  </div>
+  <nav class="main-nav" aria-label="Sections">
+    <ul class="wrap">
+      <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a></li>
+      {% for s in site.sections %}
+      <li><a href="{{ s | slugify | prepend: '/section/' | append: '/' | relative_url }}">{{ s }}</a></li>
+      {% endfor %}
+      <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+    </ul>
+  </nav>
+</header>
